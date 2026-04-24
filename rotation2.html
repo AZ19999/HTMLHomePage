@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Alex's Second Rotation</title>
+    <link rel = "stylesheet" href = "assets/css/styles.css">
+    <link rel = "icon" href = "assets/img/FAVICON.jpg" type = "image/jpg">
+
+</head>
+
+<header>
+    <img src = "assets/img/LOGO.png" alt = "Logo" style = "height: 80px; margin-left: 8px;">
+    <div style = "flex: 1; text-align: center;">Rotation 2</div>
+</header>
+
+<body>
+
+    <div class="navbar">
+        <a onclick="navigateWithDelay('Index.html')">Home</a>
+        <a onclick="navigateWithDelay('rotation1.html')">Rotation 1</a>
+        <a onclick="navigateWithDelay('rotation2.html')">Rotation 2</a>
+        <a onclick="navigateWithDelay('rotation3.html')">Rotation 3</a>
+        <a onclick="navigateWithDelay('rotation4.html')">Rotation 4</a>
+        <a onclick="navigateWithDelay('changelog.html')">Changelog</a>
+    </div>
+    
+    <div class="spinner-overlay" id="spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="main-content">
+        <h1 style = "text-align: center;">Rotation Details</h1>
+        <p>Digital Line: Commercial Creation Center & CDI (C4)</p>
+        <p>DLT: Jane VonKirchbach</p>
+        <p>Role ID: JV-01</p>
+        <p>Line Champion: Tom Gasnick</p>
+        <p>Role Title: Software/ Solution Engineer</p>
+        <p>Team: Omnichannel Services & Solutions</p>
+        <p>Assignment Manager: Namrata Raval</p>
+        <p>Site Location: Groton, CT</p>
+        <hr>
+
+        <h1 style = "text-align: center;">Notable projects/events</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean viverra sed nunc sed tincidunt. Integer sagittis pellentesque turpis, non malesuada leo. Integer volutpat id augue at mattis. Vivamus at viverra sapien. Proin vel dictum odio. Integer egestas est magna, nec dignissim justo dictum id. Donec consequat vitae tortor ut pretium. Suspendisse ullamcorper turpis convallis euismod facilisis.</p>
+        <hr>
+
+        <h1 style = "text-align: center;">Rotation 2 Links</h1>
+    </div>
+
+    <script>
+        function navigateWithDelay(url) {
+          const spinner = document.getElementById('spinner');
+          const content = document.getElementById('main-content');
+    
+          content.classList.add('hidden');
+          spinner.style.display = 'flex';
+    
+          setTimeout(() => {
+            window.location.href = url;
+          }, 250);
+        }
+    </script>
+
+</body>
+
+<footer>
+    &copy; 2025-2026 Alexander Zhu. A fun little project.
+</footer>
+
+</html>

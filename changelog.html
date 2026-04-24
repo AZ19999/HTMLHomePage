@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Changelog</title>
+    <link rel = "stylesheet" href = "assets/css/styles.css">
+    <link rel = "icon" href = "assets/img/FAVICON.jpg" type = "image/jpg">
+
+</head>
+
+<header>
+    <img src = "assets/img/LOGO.png" alt = "Logo" style = "height: 80px; margin-left: 8px;">
+    <div style = "flex: 1; text-align: center;">Changelog</div>
+</header>
+
+<body>
+    
+    <div class="navbar">
+        <a onclick="navigateWithDelay('Index.html')">Home</a>
+        <a onclick="navigateWithDelay('rotation1.html')">Rotation 1</a>
+        <a onclick="navigateWithDelay('rotation2.html')">Rotation 2</a>
+        <a onclick="navigateWithDelay('rotation3.html')">Rotation 3</a>
+        <a onclick="navigateWithDelay('rotation4.html')">Rotation 4</a>
+        <a onclick="navigateWithDelay('changelog.html')">Changelog</a>
+    </div>
+
+    <div class="spinner-overlay" id="spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="main-content">
+    <h1 style = "text-align: center;">Update April 24th, 2026</h1>
+        <h2>1 Hour</h2>
+        <p>-prepared a clean version for a public repository to be used in the future.</p>
+        <hr>
+
+        <h1 style = "text-align: center;">Update Janaury 5th, 2026</h1>
+        <h2>1 Hour</h2>
+        <p>-updated footer to include 2026.</p>
+        <p>-Added a link to PLI on the homepage</p>
+        <p>-Added sections on the rotation pages for rotation details and any notable projects/events</p>
+        <p>-filled out this section for rotation 1</p>
+        <hr>
+
+        <h1 style = "text-align: center;">Update August 14, 2025</h1>
+        <h2>2 Hours</h2>
+        <p>-Changed style of loading circle.</p>
+        <p>-Divided rotations into separate pages to reduce clutter on front page.</p>
+        <p>-added navigation bar at top to go to individual pages.</p>
+        <p>-Began background work to implement common layout across all html pages.</p>
+        <hr>
+
+        <h1 style = "text-align: center;">Update August 12, 2025</h1>
+        <h2>1 Hour</h2>
+        <p>-Added a changelog page to help better track what changes are mades to this site.</p>
+        <p>-Added navigation buttons to the header to easily go back and forth between the two pages.</p>
+        <p>-Added favicon.</p>
+        <p>-Moved all general styling to a css style sheet for easier creation of new pages.</p>
+        <p>-reorganized folder structure to match more conventional website design.</p>
+        <p>-Added loading circles for page transitions.</p>
+        <hr>
+
+        <h1 style = "text-align: center;">Update July 31, 2025</h1>
+        <h2>1 Hour</h2>
+        <p>-Styled the site using the official Pfizer style guide.</p>
+        <p>-Changed primary font to be comic sans.</p>
+        <p>-Added different sections for links so that site can be used for multiple rotations.</p>
+        <p>-Fixed header and footer to better acommodate site design.</p>
+        <hr>
+        
+        <h1 style = "text-align: center;">Update July 30, 2025</h1>
+        <h2>1 Hour</h2>
+        <p>-Initial creation of site with hyperlinks.</p>
+        <p>-added Garfield</p>
+    </div>
+
+    <script>
+        function navigateWithDelay(url) {
+          const spinner = document.getElementById('spinner');
+          const content = document.getElementById('main-content');
+    
+          content.classList.add('hidden');
+          spinner.style.display = 'flex';
+    
+          setTimeout(() => {
+            window.location.href = url;
+          }, 250);
+        }
+    </script>
+</body>
+
+<footer>
+    &copy; 2025-2026 Alexander Zhu. A fun little project.
+</footer>
+
+</html>

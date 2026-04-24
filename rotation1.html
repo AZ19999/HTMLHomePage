@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Alex's First Rotation</title>
+    <link rel = "stylesheet" href = "assets/css/styles.css">
+    <link rel = "icon" href = "assets/img/FAVICON.jpg" type = "image/jpg">
+
+</head>
+
+<header>
+    <img src = "assets/img/LOGO.png" alt = "Logo" style = "height: 80px; margin-left: 8px;">
+    <div style = "flex: 1; text-align: center;">Rotation 1</div>
+</header>
+
+<body>
+    
+    <div class="navbar">
+        <a onclick="navigateWithDelay('Index.html')">Home</a>
+        <a onclick="navigateWithDelay('rotation1.html')">Rotation 1</a>
+        <a onclick="navigateWithDelay('rotation2.html')">Rotation 2</a>
+        <a onclick="navigateWithDelay('rotation3.html')">Rotation 3</a>
+        <a onclick="navigateWithDelay('rotation4.html')">Rotation 4</a>
+        <a onclick="navigateWithDelay('changelog.html')">Changelog</a>
+    </div>
+    
+    <div class="spinner-overlay" id="spinner">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="main-content">
+        <h1 style = "text-align: center;">Rotation Details</h1>
+        <p>Digital Line: Commercial Creation Center and CDI(C4)</p>
+        <p>DLT: Jane VonKirchbach</p>
+        <p>Role ID: CC-04</p>
+        <p>Line Champion: Darlene Coolong</p>
+        <p>Role Title: Business Analyst</p>
+        <p>Team: Patient Support Services</p>
+        <p>Assignment Manager: Alyson Tacchi</p>
+        <p>Site Location: Groton, CT</p>
+        <hr>
+
+        <h1 style = "text-align: center;">Notable projects/events</h1>
+        <p>Information redacted for security</p>
+        <hr>
+
+        <h1 style = "text-align: center;">Rotation 1 Links</h1>
+        <p>Links redacted for security</p>
+    </div>
+
+    <script>
+        function navigateWithDelay(url) {
+          const spinner = document.getElementById('spinner');
+          const content = document.getElementById('main-content');
+    
+          content.classList.add('hidden');
+          spinner.style.display = 'flex';
+    
+          setTimeout(() => {
+            window.location.href = url;
+          }, 250);
+        }
+    </script>
+
+</body>
+
+<footer>
+    &copy; 2025-2026 Alexander Zhu. A fun little project.
+</footer>
+
+</html>
